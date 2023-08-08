@@ -20,57 +20,76 @@ section h1 {
 
 /* ---------------------------------------------------------Nav */
 nav {
-    text-decoration: none;
-    position: sticky;
-    top: 0;
-    box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.68);
-    z-index: 10;
+  text-decoration: none;
+  position: sticky;
+  top: 0;
+  box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.68);
+  z-index: 10;
 }
-nav img {
+nav img#logoH {
     width: 8vw;
-    margin-left: 5vw;
+    /* margin-left: 5vw; */
     align-self: center;
     margin-top: -5px;
     margin-bottom: 5px;
 }
 ul.pc {
-    display: flex;
-    list-style: none;
-    margin-left: 30vw;
+  display: flex;
+  list-style: none;
+  margin-left: 30vw;
 }
 .pc li {
     margin-right: 4vw;
     align-self: center;
     padding: 10px;
+    justify-self: center;
 }
 .rest {
-  display: flex;
-  background-color: black;
-  z-index: 20;
+display: flex;
+background-color: black;
+z-index: 20;
+}
+.pc li a img{
+width: 3vw;
+margin-left: 25%;
+}
+.pc li#language:hover {
+  background-color: #6d6d6d;
+}
+.pc li a {
+margin-left: 0vw;
+align-content: center;
+}
+.pc li button img{
+  width: 3vw;
+}
+.pc li button {
+  margin-left: 0vw;
+  align-content: center;
 }
 .underline-animation {
-    display: inline-block;
-    position: relative;
-    color: white;
-  }
-  
-  .underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
   /* ---------------------------------------------------------Header */
   .image {
     background-image: url(assets/Band.jpeg);
@@ -253,8 +272,11 @@ nav button img {
   ul.pc {
     display: none;
   }
-  nav img {
+  nav img#logoH {
     width: 30vw;
+  }
+  a.mobile img {
+    width: 20vw;
   }
   .image img {
     width: 70vw;
@@ -291,7 +313,7 @@ nav button img {
     overflow-x: hidden;
   }
   nav {
-    display: grid;
+    display: grid;  
   }
   .show {
     max-width: 90vw;
@@ -302,7 +324,16 @@ nav button img {
   }
   .rest {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+  .rest a img {
+    width: 13vw ;
+    margin-top: 2.5vh;
+    margin-left: 5vw;
+  }
+  .rest button img{
+    margin-top: 2.5vh;
+    margin-left: 10vw;
   }
   .menu ul {
     text-align: center;
