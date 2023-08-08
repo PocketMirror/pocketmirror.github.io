@@ -27,19 +27,11 @@ nav {
   z-index: 10;
 }
 nav img#logoH {
-<<<<<<< Updated upstream
     width: 8vw;
     /* margin-left: 5vw; */
     align-self: center;
     margin-top: -5px;
     margin-bottom: 5px;
-=======
-  width: 8vw;
-  /* margin-left: 5vw; */
-  align-self: center;
-  margin-top: -5px;
-  margin-bottom: 5px;
->>>>>>> Stashed changes
 }
 ul.pc {
   display: flex;
@@ -47,17 +39,10 @@ ul.pc {
   margin-left: 30vw;
 }
 .pc li {
-<<<<<<< Updated upstream
     margin-right: 4vw;
     align-self: center;
     padding: 10px;
     justify-self: center;
-=======
-  margin-right: 4vw;
-  align-self: center;
-  padding: 10px;
-  justify-self: center;
->>>>>>> Stashed changes
 }
 .rest {
 display: flex;
@@ -328,7 +313,7 @@ nav button img {
     overflow-x: hidden;
   }
   nav {
-    display: grid;
+    display: grid;  
   }
   .show {
     max-width: 90vw;
@@ -339,7 +324,16 @@ nav button img {
   }
   .rest {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+  .rest a img {
+    width: 13vw ;
+    margin-top: 2.5vh;
+    margin-left: 5vw;
+  }
+  .rest button img{
+    margin-top: 2.5vh;
+    margin-left: 10vw;
   }
   .menu ul {
     text-align: center;
