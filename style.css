@@ -90,6 +90,9 @@ align-content: center;
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+li a img#english {
+  margin-left: 0.5vw;
+}
   /* ---------------------------------------------------------Header */
   .image {
     background-image: url(assets/Band.jpeg);
