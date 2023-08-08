@@ -26,9 +26,9 @@ nav {
     box-shadow: 2px 2px 9px 3px rgba(0, 0, 0, 0.68);
     z-index: 10;
 }
-nav img {
+nav img#logoH {
     width: 8vw;
-    margin-left: 5vw;
+    /* margin-left: 5vw; */
     align-self: center;
     margin-top: -5px;
     margin-bottom: 5px;
@@ -42,11 +42,19 @@ ul.pc {
     margin-right: 4vw;
     align-self: center;
     padding: 10px;
+    justify-self: center;
 }
 .rest {
   display: flex;
   background-color: black;
   z-index: 20;
+}
+.pc li button img{
+  width: 3vw;
+}
+.pc li button {
+  margin-left: 0vw;
+  align-content: center;
 }
 .underline-animation {
     display: inline-block;
