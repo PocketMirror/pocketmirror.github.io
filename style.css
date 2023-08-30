@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Inter:wght@400;500;800&family=Monomaniac+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Inter:wght@400;500;800&family=Monomaniac+One&display=swap');
 /* ---------------------------------------------------------Main */
 *{
     margin: 0;
@@ -14,7 +14,7 @@ body{
 }
 section h1 {
   font-family: 'Monomaniac one', sans-serif;
-  font-size: 2vw;
+  font-size: 3vw;
   text-align: center;
 }
 
@@ -228,6 +228,27 @@ section#musics {
   border: 2px solid white;
   margin-bottom: 0px;
 }
+/* ---------------------------------------------------------Section 4 */
+section#Photos {
+  background-color: #191919;
+}
+.photo {
+  height: 40vh;
+  width: 20vw;
+  background-color: white;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 4px 0px rgb(126, 125, 125);
+}
+#insideP {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 5vw;
+  padding: 20px;
+  width: 100%;
+}
 
 /* ---------------------------------------------------------Footer */
 footer {
@@ -365,5 +386,12 @@ nav button img {
   .message {
     max-width: 90vw;
     margin-left: 5vw;
+  }
+  #insideP {
+    display: block;
+  }
+  .photo {
+    width: 90vw;
+    margin-top: 5vh;
   }
 }
