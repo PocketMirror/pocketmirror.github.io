@@ -28,7 +28,7 @@ nav {
 }
 nav img#logoH {
     width: 8vw;
-    /* margin-left: 5vw; */
+    margin-left: 5vw;
     align-self: center;
     margin-top: -5px;
     margin-bottom: 5px;
@@ -89,6 +89,9 @@ align-content: center;
 .underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+li a img#english {
+  margin-left: 0.5vw;
 }
   /* ---------------------------------------------------------Header */
   .image {
