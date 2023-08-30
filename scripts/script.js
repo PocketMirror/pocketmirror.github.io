@@ -39,3 +39,37 @@ function button() {
     menu.classList.toggle('menu')
     menu.classList.toggle('hiden')
  }
+
+ const images = [];
+ let i = 0;
+ 
+ async function fetchImages() {
+     while (true) {
+         const response = await fetch(`./assets/photos/${i}.jpg`);
+         if (response.ok) {
+             images.push(`./assets/photos/${i}.jpg`);
+             i++;
+         } else {
+             break;
+         }
+     }
+ }
+ 
+ fetchImages().then(() => {
+     console.log("Imagens encontradas:", images);
+ 
+     images.forEach((image) => {
+         const div = document.createElement("div")
+         div.classList.add('photo')
+         div.style.cssText =
+             'height: 40vh;' +
+             'width: 20vw;' +
+             `background-image: url(${image});` +
+             'border-radius: 20px;' +
+             'background-repeat: no-repeat;' +
+             'background-size: cover;'
+ 
+         console.log('imagens criadas')
+         document.getElementById('insideP').appendChild(div)
+     });
+ });
