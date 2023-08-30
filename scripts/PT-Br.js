@@ -71,7 +71,7 @@
         const no = document.createElement('p')
     
         no.classList.add('message')
-        no.innerHTML = 'Parece que não temos nada marcado... Por enquanto'
+        no.innerHTML = "Parece que não temos nada marcado ... Por enquanto"
         document.getElementById('insideS').appendChild(no)
         
     }

@@ -62,13 +62,7 @@ function button() {
          const div = document.createElement("div")
          div.classList.add('photo')
          div.style.cssText =
-             'height: 40vh;' +
-             'width: 20vw;' +
-             `background-image: url(${image});` +
-             'border-radius: 20px;' +
-             'background-repeat: no-repeat;' +
-             'background-size: cover;'
- 
+             `background-image: url(${image});`
          console.log('imagens criadas')
          document.getElementById('insideP').appendChild(div)
      });

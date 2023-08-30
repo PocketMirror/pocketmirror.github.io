@@ -68,7 +68,7 @@ const shows = [
         const no = document.createElement('p')
     
         no.classList.add('message')
-        no.innerHTML = 'Parece que não temos nada marcado... Por enquanto'
+        no.innerHTML = "looks like we don't have nothing here... for now"
         document.getElementById('insideS').appendChild(no)
         
     }
