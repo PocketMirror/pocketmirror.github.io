@@ -10,6 +10,11 @@ const musics = [
     Img: 'winter.jpg',
     Link: "https://youtu.be/erYZAS5brLg?list=OLAK5uy_kS8FXUWYbwOzkl54I9ouW0Wm2Lz0ApH2Q"
 },
+{
+    Name: "PL",
+    Img: 'december2023.jpg',
+    Link: "/soon.html"
+},
 ]
 
 
@@ -46,6 +51,7 @@ function button() {
  async function fetchImages() {
      while (true) {
          const response = await fetch(`./assets/photos/${i}.jpg`);
+
          if (response.ok) {
              images.push(`./assets/photos/${i}.jpg`);
              i++;

@@ -1,4 +1,3 @@
-
 // Colocar as infos do show aqui embaixo como no irei explicar
 // Na area de valor, caso for de graça escrever null caso for outro valor escrever por exemplo '1kg de alimento'
 // se for um número apenas escreva sem ''
@@ -75,5 +74,4 @@
         no.innerHTML = "Parece que não temos nada marcado ... Por enquanto"
         document.getElementById('insideS').appendChild(no)
         
-
     }

@@ -1,4 +1,3 @@
-
 const shows = [
     //     {
     //     Name: "Ensaio Aberto",

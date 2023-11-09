@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comming soon</title>
+</head>
+<body>
+    <h1>Do you <spam onclick="sound()">hear?</spam></h1>
+    <audio id="1">
+        <source src="assets/purple.mp3">
+    </audio>
+    <script>
+        var chance = parseInt(Math.random() * 8)
+        let num = 1
+        const body = document.querySelector('body')
+        const h1 = document.querySelector('h1')
+
+        function sound() {
+            if(chance == 5){
+                console.log('playing')
+                
+                document.getElementById('1').play()
+            }else {
+                console.log(chance)
+            }
+        }
+        function color() {
+            if(num == 1) {
+                h1.style.color = 'black'
+                body.style.backgroundColor = "white"
+
+                num = 2
+                setTimeout(() => {
+                color();
+                }, 700);
+            }else {
+                h1.style.color = "white"
+                body.style.backgroundColor = 'black'
+
+                num = 1
+                setTimeout(() => {
+                color();
+                }, 700);
+            }
+        }
+        color()
+    </script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        h1 {
+            margin-top: 20%;
+        }
+        span {
+            cursor: pointer;
+        }
+    </style>
+</body>
+</html>
