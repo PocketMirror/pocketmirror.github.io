@@ -69,6 +69,7 @@ function button() {
          div.classList.add('photo')
          div.style.cssText =
              `background-image: url(${image});`
+         div.loading = 'lazy'
          console.log('imagens criadas')
          document.getElementById('insideP').appendChild(div)
      });
